@@ -1,0 +1,182 @@
+{% load static %}
+{% include 'basic/header2.html' %}
+{% load crispy_forms_tags %}
+
+
+<main id="content" role="main">
+    <!-- Checkout Section -->
+    <div class="container space-1 space-md-2 pt-5">
+      <div class="row">
+        <div class="col-lg-4 order-lg-2 mb-7 mb-lg-0">
+          <div class="pl-lg-4">
+            <!-- Order Summary -->
+            <div class="card shadow-soft p-4 mb-4">
+              <!-- Title -->
+              <div class="border-bottom pb-4 mb-4">
+                <h2 class="h3 mb-0">Order summary</h2>
+              </div>
+              <!-- End Title -->
+
+              <!-- Product Content -->
+              <div class="border-bottom pb-4 mb-4">
+                <div class="media">
+                  <div class="avatar avatar-lg mr-3">
+                    <sup class="avatar-status avatar-primary">1</sup>
+                  </div>
+                  <div class="media-body">
+                    <h2 class="h6">Local Services</h2>
+                    <div class="text-body font-size-1">
+                      <span>Korzysc</span>
+                      <span>Korzysc</span>
+                    </div>
+                    <div class="text-body font-size-1">
+                      <span>Korzysc</span>
+                      <span>Korzysc</span>
+                    </div>
+                    <div class="text-body font-size-1">
+                      <span>Korzysc</span>
+                      <span>Korzysc</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+
+              <!-- Fees -->
+              <div class="border-bottom pb-4 mb-4">
+                <div class="media align-items-center mb-3">
+                  <span class="d-block font-size-1 mr-3">Subtotal</span>
+                  <div class="media-body text-right">
+                    <span class="text-dark font-weight-bold">$19.99</span>
+                  </div>
+                </div>
+
+  
+                <!-- Checkbox -->
+                <div class="card shadow-none mb-3">
+                  <div class="card-body p-0">
+                    <div class="custom-control custom-radio d-flex align-items-center small">
+                      <input type="radio" class="custom-control-input" id="deliveryRadio2" name="deliveryRadio">
+                      <label class="custom-control-label ml-1" for="deliveryRadio2">
+                        <span class="d-block font-size-1 font-weight-bold mb-1">$19.99 Add some extras
+
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Checkbox -->
+
+      
+              </div>
+              <!-- End Fees -->
+
+              <!-- Total -->
+              <div class="media align-items-center">
+                <span class="d-block font-size-1 mr-3">Total</span>
+                <div class="media-body text-right">
+                  <span class="text-dark font-weight-bold">$19.99</span>
+                </div>
+              </div>
+              <!-- End Total -->
+            </div>
+            <!-- End Order Summary -->
+
+            <!-- Accordion -->
+            <div id="shopCartAccordion" class="accordion card shadow-soft mb-4">
+              <!-- Card -->
+      
+              <!-- End Card -->
+            </div>
+            <!-- End Accordion -->
+
+            <!-- Help Link -->
+            <div class="media align-items-center">
+              <figure class="w-100 max-w-6rem mr-2">
+                <img class="img-fluid" src="{% static 'assets/svg/icons/icon-4.svg' %}" alt="SVG">
+              </figure>
+              <div class="media-body text-body small">
+                <span class="font-weight-bold mr-1">Need Help?</span>
+                <a class="link-underline" href="#">Contact</a>
+              </div>
+            </div>
+            <!-- End Help Link -->
+          </div>
+        </div>
+
+        <div class="col-lg-8 order-lg-1">
+          <form class="js-validate">
+         
+
+            <!-- Payment -->
+            <div class="mb-7">
+              <!-- Title -->
+              <div class="mb-4">
+                <h2 class="h3">Form</h2>
+              </div>
+              <!-- End Title -->
+
+              <!-- Input -->
+              <div class="js-form-message mb-3 mb-sm-6">
+                <label class="input-label">Link 1</label>
+                <input type="text" class="form-control" name="cardNumber"  required
+                       data-msg="Please enter a valid card number.">
+              </div>
+              <div class="js-form-message mb-3 mb-sm-6">
+                <label class="input-label">Link 2</label>
+                <input type="text" class="form-control" name="cardNumber"  required
+                       data-msg="Please enter a valid card number.">
+              </div>
+              <div class="js-form-message mb-3 mb-sm-6">
+                <label class="input-label">Link 3</label>
+                <input type="text" class="form-control" name="cardNumber"  required
+                       data-msg="Please enter a valid card number.">
+              </div>
+              <!-- End Input -->
+
+              <div class="row">
+                <div class="col-sm-6 col-lg-4 px-2 px-sm-3 mb-3 mb-sm-5">
+                  <!-- Input -->
+                  <div class="js-form-message">
+                    <label class="input-label">File</label>
+                    <input class="btn btn-primary" type="button" value="Input">
+
+                  </div>
+                  <!-- End Input -->
+                </div>
+
+                <div class="col-sm-6 col-lg-4 px-2 px-sm-3 mb-3 mb-sm-5">
+                  <!-- Input -->
+                  <div class="js-form-message">
+                    <label class="input-label">File</label>
+                    <input class="btn btn-primary" type="button" value="Input">
+
+                  </div>
+                  <!-- End Input -->
+                </div>
+
+                <div class="col-sm-6 col-lg-4 px-2 px-sm-3 mb-3 mb-sm-5">
+                  <!-- Input -->
+                  <div class="js-form-message">
+                    <label class="input-label">File</label>
+                    <input class="btn btn-primary" type="button" value="Input">
+
+                  </div>
+                  <!-- End Input -->
+                </div>
+              </div>
+
+              <!-- Button -->
+              <div class="d-flex justify-content-center align-items-center">
+                <button type="submit" class="btn btn-primary btn-pill transition-3d-hover">Place order</button>
+              </div>
+              <!-- End Button -->
+            </div>
+            <!-- End Payment -->
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Checkout Section -->
+  </main>
+{% include "basic/footer.html" %}
